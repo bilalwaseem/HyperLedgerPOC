@@ -1,0 +1,94 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "hyper-ledger-poc"
+  },
+  "apps": [{
+    "root": "src",
+    "outDir": "dist",
+    "assets": [
+      "assets",
+      "favicon.ico"
+    ],
+    "index": "index.html",
+    "main": "main.ts",
+    "polyfills": "polyfills.ts",
+    "test": "test.ts",
+    "tsconfig": "tsconfig.app.json",
+    "testTsconfig": "tsconfig.spec.json",
+    "prefix": "app",
+    "styles": [
+      "../src/assets/plugins/simple-line-icons/simple-line-icons.min.css",
+      "../src/assets/plugins/font-awesome/css/font-awesome.min.css",
+      "../src/assets/plugins/bootstrap/css/bootstrap.min.css",
+      "../src/assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css",
+      "../src/assets/plugins/material/material.min.css",
+      "../src/assets/css/material_style.css",
+      "../src/assets/css/pages/animate_page.css",
+      "../src/assets/plugins/dropzone/dropzone.css",
+      "../src/assets/css/style.css",
+      "../src/assets/css/pages/formlayout.css",
+      "../src/assets/css/responsive.css",
+      "../src/assets/css/theme-color.css"
+    ],
+
+    "scripts": [
+      "../src/assets/plugins/jquery/jquery.min.js",
+      "../src/assets/plugins/popper/popper.min.js",
+      "../src/assets/plugins/jquery-blockui/jquery.blockui.min.js",
+      "../src/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+      "../src/assets/plugins/datatables/jquery.dataTables.min.js",
+      "../src/assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js",
+      "../src/assets/js/pages/table/table_data.js",
+      "../src/assets/js/app.js",
+      "../src/assets/js/layout.js",
+      "../src/assets/js/theme-color.js",
+      "../src/assets/plugins/material/material.min.js",
+      "../src/assets/js/pages/ui/animations.js",
+      "../src/assets/plugins/bootstrap/js/bootstrap.min.js",
+      "../src/assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js",
+      "../src/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js",
+      "../src/assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker-init.js",
+      "../src/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js",
+      "../src/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker-init.js",
+      "../src/assets/plugins/dropzone/dropzone.js",
+      "../src/assets/plugins/dropzone/dropzone-call.js",
+      "../src/assets/plugins/jquery-tags-input/jquery-tags-input.js",
+      "../src/assets/plugins/jquery-tags-input/jquery-tags-input-init.js",
+      "../src/assets/plugins/select2/js/select2.js",
+      "../src/assets/js/pages/select2/select2-init.js"
+    ],
+    "environmentSource": "environments/environment.ts",
+    "environments": {
+      "dev": "environments/environment.ts",
+      "prod": "environments/environment.prod.ts"
+    }
+  }],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [{
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
